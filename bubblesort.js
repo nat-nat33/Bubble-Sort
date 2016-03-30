@@ -9,6 +9,7 @@ function myBubbleSort(arr) {
       }
     }
   }
+  return arr;
 }
 
 module.exports = myBubbleSort;
