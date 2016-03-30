@@ -1,0 +1,71 @@
+
+// PARTIALS
+@import "partials/reset";
+
+// MIXINS
+
+$breakpoints: (
+  'medium': 500px,
+  'large':  800px
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+
+// VARIABLES
+$color1: orange;
+$color2: red;
+$textcolor: white;
+$divColor: purple;
+$tempColor: green;
+
+// STYLES
+
+body {
+  background-color: $textcolor;
+}
+
+// HEADER
+h1{
+  color: $textcolor;
+  font-size: 25px;
+  background-color: $color1;
+  height: 100px;
+}
+
+#main{
+  background-color: $color2;
+  height: 800px;
+  width: 800px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+
+  #display{
+    background-color: $tempColor;
+    height: 650px;
+    width: 650px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-end;
+
+    .blocks{
+      background-color: $divColor;
+      margin-left: 5px;
+      width: 20px;
+    }
+  }
+}
+

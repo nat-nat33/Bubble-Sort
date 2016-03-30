@@ -4,7 +4,7 @@
   "description": "Bubble Sort Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "node_modules/.bin/mocha -R spec --bail --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/nat-nat33/Bubble-Sort#readme",
   "devDependencies": {
+    "browser-sync": "^2.11.2",
     "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
     "mocha": "^2.4.5"
   }
 }
