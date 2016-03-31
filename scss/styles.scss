@@ -23,16 +23,17 @@ $breakpoints: (
 
 
 // VARIABLES
-$color1: orange;
-$color2: red;
-$textcolor: white;
-$divColor: purple;
-$tempColor: green;
+$back: #262901;
+$color1: #777600;
+$color2: #E0550F;
+$textcolor: #floralwhite;
+$divColor: #EBE400;
+$tempColor: #5D5C0A;
 
 // STYLES
 
 body {
-  background-color: $textcolor;
+  background-color: $back;
 }
 
 // HEADER
@@ -69,3 +70,12 @@ h1{
   }
 }
 
+button{
+  display: flex;
+  flex-flow: column nowrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+
+}
