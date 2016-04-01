@@ -1,2 +1,2 @@
-# Bubble-Sort
-Bubble Sort Challenge
+# Sorting
+Sort Challenges
