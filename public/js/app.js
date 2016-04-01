@@ -5,14 +5,17 @@ function randomArr () {
   var maxNumber = 20;
   var minNumber = 1;
 
-  for( var i = 0; i < 20; i++){
+  for( var i = 0; i < 50; i++){
     var number = Math.floor(Math.random()*(maxNumber - minNumber) + minNumber);
+    if(newArr.indexOf(number) === -1){
     newArr.push(number);
+    }
   }
 
   newArr.push(maxNumber);
   return newArr;
 }
+
 randomArr();
 
 function createDivs () {

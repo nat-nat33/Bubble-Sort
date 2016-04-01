@@ -49,7 +49,7 @@ h1{
   height: 800px;
   width: 800px;
   display: flex;
-  flex-flow: row nowrap;
+  align-items: flex-start;
   margin: auto;
 
   #display{
@@ -57,7 +57,6 @@ h1{
     height: 650px;
     width: 650px;
     display: flex;
-    flex-flow: row nowrap;
     margin: auto;
     justify-content: center;
     align-items: flex-end;
@@ -71,11 +70,10 @@ h1{
 }
 
 button{
-  display: flex;
-  flex-flow: column nowrap;
-  flex-direction: column;
+  position: relative;
   justify-content: center;
-  height: 50px;
-  width: 60px;
+  height: 20px;
+  width: 100px;
+  align-self: flex-end;
 
 }

@@ -4,10 +4,10 @@ function mergeSort (items) {
  }
 
   var middle = Math.floor(items.length / 2),
-   left    = items.slice(0, middle),
-   right   = items.slice(middle);
+   left = items.slice(0, middle),
+   right = items.slice(middle);
 
-  return concat(mergeSort(left), mergeSort(right));
+  return merge(mergeSort(left), mergeSort(right));
 }
 
 function merge(left, right) {
@@ -15,9 +15,22 @@ function merge(left, right) {
 
   while(left.length || right.length) {
     if(left.length && right.length) {
+      if(left[0] < right[0]) {
+        result.push(left.shift());
+      }
+      else {
+        result.push(right.shift());
+      }
 
+    }
+    else if (left.length) {
+      result.push(left.shift());
+    }
+    else {
+      result.push(right.shift());
+    }
   }
-
+ console.log('poop');
   return result;
 
 }
