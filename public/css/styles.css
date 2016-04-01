@@ -42,23 +42,25 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #262901; }
+  background-color: #4B0A34; }
 
 h1 {
-  color: #floralwhite;
-  font-size: 25px;
-  background-color: #777600;
+  text-align: center;
+  color: 80000;
+  font-size: 50px;
+  background-color: #FBAD86;
   height: 100px; }
 
 #main {
-  background-color: #E0550F;
+  background-color: #338F8E;
   height: 800px;
   width: 800px;
   display: flex;
-  align-items: flex-start;
-  margin: auto; }
+  margin: auto;
+  justify-content: center;
+  flex-flow: row wrap; }
   #main #display {
-    background-color: #5D5C0A;
+    background-color: #FEECD6;
     height: 650px;
     width: 650px;
     display: flex;
@@ -66,13 +68,18 @@ h1 {
     justify-content: center;
     align-items: flex-end; }
     #main #display .blocks {
-      background-color: #EBE400;
+      background-color: #FF3B58;
+      text-align: center;
       margin-left: 5px;
-      width: 20px; }
+      width: 20px;
+      color: 80000; }
 
 button {
-  position: relative;
-  justify-content: center;
-  height: 20px;
+  font: 20px Calibri, Arial, sans-serif;
+  color: purple;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+  height: 100px;
   width: 100px;
-  align-self: flex-end; }
+  border-radius: 50px;
+  background-position: top left;
+  background-image: url("/css/images/rainbowbubb.jpg"); }

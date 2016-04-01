@@ -23,12 +23,12 @@ $breakpoints: (
 
 
 // VARIABLES
-$back: #262901;
-$color1: #777600;
-$color2: #E0550F;
-$textcolor: #floralwhite;
-$divColor: #EBE400;
-$tempColor: #5D5C0A;
+$back: #4B0A34;
+$color1: #FBAD86;
+$color2: #338F8E;
+$textcolor: 080000;
+$divColor: #FF3B58;
+$tempColor: #FEECD6;
 
 // STYLES
 
@@ -38,8 +38,9 @@ body {
 
 // HEADER
 h1{
+  text-align: center;
   color: $textcolor;
-  font-size: 25px;
+  font-size: 50px;
   background-color: $color1;
   height: 100px;
 }
@@ -49,8 +50,9 @@ h1{
   height: 800px;
   width: 800px;
   display: flex;
-  align-items: flex-start;
   margin: auto;
+  justify-content: center;
+  flex-flow: row wrap;
 
   #display{
     background-color: $tempColor;
@@ -63,17 +65,23 @@ h1{
 
     .blocks{
       background-color: $divColor;
+      text-align: center;
       margin-left: 5px;
       width: 20px;
+      color: $textcolor
     }
   }
 }
 
 button{
-  position: relative;
-  justify-content: center;
-  height: 20px;
+  font:20px Calibri, Arial, sans-serif;
+  color: purple;
+  text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+  height: 100px;
   width: 100px;
-  align-self: flex-end;
-
+  border-radius: 50px;
+  background-position: top left;
+  background-image: url('/css/images/rainbowbubb.jpg')
 }
+
+
